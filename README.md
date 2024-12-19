@@ -1,4 +1,4 @@
-# This is a full-stack application is developed with Spring Boot as backend and React as frontend, integrated with Kafka and Zookeeper for event-driven architecture.
+# This is a full-stack application developed with Spring Boot as the backend and React as the front end, integrated with Kafka and Zookeeper for event-driven architecture.
 
 ## Key Features:
 
