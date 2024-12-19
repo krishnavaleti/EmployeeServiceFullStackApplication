@@ -14,6 +14,7 @@
    
 ### Kafka:
 **Producer:** Sends employee data from the backend to Kafka for further processing or event-driven communication.
+
 **Consumer:** To be implemented, processes incoming events and takes action based on received data.
 
 ### Zookeeper:
