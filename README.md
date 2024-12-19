@@ -24,18 +24,20 @@
 1. Start the zoo keeper.
    
 	a. go to path C:\kafka and open command prompt from there.
+
 	b. give the command  .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 	
-2. Start the kafka.
+3. Start the kafka.
    
 	a. go to path C:\kafka and open command prompt from there.
+
 	b. give the command  .\bin\windows\kafka-server-start.bat .\config\server.properties
 
-3. Run backend service
+5. Run backend service
    
 	a. Open Spring tool suite (STS) and run the application
 
-4. Create a kafka topic employee-topic if not created already
+6. Create a kafka topic employee-topic if not created already
    
 	a. go to path C:\kafka and open command prompt from there.
 
@@ -44,7 +46,7 @@
 	c. verify the topic with below command,
 		.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
 
-5. Run frontend application
+7. Run frontend application
    
 	a. Navigate to your project directory,
 		cd C:\Users\krishna\visualstudio-workspace\employee-ui
@@ -55,7 +57,7 @@
 	c. Open the below URL in browser
 		http://localhost:3000
 		
-6. Test Kafka and backend
+8. Test Kafka and backend
    
 	a. Test backend with postman with below data and with URL: _http://localhost:8080/employees/publish_
 
@@ -73,7 +75,7 @@
 		Use the credentials defined in application.properties (jdbc:h2:mem:employeedb, user: sa).
 		Run: SQL query  SELECT * FROM employee;
 		
-8. Test the frontend
+9. Test the frontend
    
 	a. Open the React UI at http://localhost:3000.
 
@@ -82,7 +84,7 @@
 		Search functionality works as expected.
 		Pagination allows you to navigate between pages.
 		
-9. Test Scheduled Updates
+10. Test Scheduled Updates
 
 	a. Wait for given time for the scheduled service to update the timestamp field in the database.
  
