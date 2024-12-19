@@ -1,0 +1,99 @@
+/* General container styling */
+.pagination-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align elements to the bottom */
+  height: 100vh; /* Take full viewport height */
+}
+
+/* Ensure the table takes up remaining space */
+.table-container {
+  flex-grow: 1; /* Table takes up the available space */
+  overflow-x: auto;
+}
+
+/* Pagination section styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: sticky;
+  bottom: 0; /* Stick the pagination to the bottom */
+  background-color: #fff; /* Optional: background color for better visibility */
+}
+
+/* Styling for page items */
+.page-item {
+  margin: 0 5px;
+}
+
+/* Styling for page links (numbers) */
+.page-link {
+  padding: 6px 10px;
+  font-size: 16px; /* Reduced size */
+  color: #007bff;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+}
+
+/* Hover effect for page links */
+.page-link:hover {
+  background-color: #f4f4f4;
+}
+
+/* Active page link styling */
+.active .page-link {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Styling for the previous/next buttons */
+.previous-button,
+.next-button {
+  padding: 6px 12px;
+  font-size: 16px;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none; /* Remove border from previous/next buttons */
+}
+
+/* Hover effect for previous/next buttons */
+.previous-button:hover,
+.next-button:hover {
+  background-color: #e1e1e1;
+}
+
+/* Disabled previous/next buttons */
+.previous-button:disabled,
+.next-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Centering the pagination at the bottom */
+.pagination-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Fix pagination section at the bottom */
+.pagination {
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
