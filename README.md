@@ -19,6 +19,12 @@
 ### Zookeeper:
   * Manages Kafka brokers and coordinates distributed systems for scalability and fault tolerance.
 
+## Pre-requisites:
+
+* Download Kafka with any Binary Scala version from [Kafka website](https://kafka.apache.org/downloads)
+* Visual studio code (for react) and STS (for backend) are used.
+
+
 # How To Run The Application:
 
 1. Start the zoo keeper.
