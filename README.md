@@ -24,6 +24,7 @@
 
 * Download Kafka with any Binary Scala version from [Kafka website](https://kafka.apache.org/downloads)
 * Visual studio code (for react) and STS (for backend) are used.
+* Postman is used for testing backend REST APIs
 
 
 # How To Run The Application:
