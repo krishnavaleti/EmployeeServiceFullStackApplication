@@ -31,13 +31,13 @@
 
 1. Start the zoo keeper.
    
-	a. go to path C:\kafka and open command prompt from there.
+	a. go to the path where you have kafka, ex: C:\kafka and open the command prompt from there.
 
 	b. give the command  .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 	
-3. Start the kafka.
+3. Start the Kafka.
    
-	a. go to path C:\kafka and open command prompt from there.
+	a. go to path C:\kafka and open the command prompt from there.
 
 	b. give the command  .\bin\windows\kafka-server-start.bat .\config\server.properties
 
@@ -47,11 +47,11 @@
 
 6. Create a kafka topic employee-topic if not created already
    
-	a. go to path C:\kafka and open command prompt from there.
+	a. go to path C:\kafka and open the command prompt from there.
 
 	b. give the command  .\bin\windows\kafka-topics.bat --create --topic employee-topic --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 
-	c. verify the topic with below command,
+	c. verify the topic with the below command,
 		.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
 
 7. Run frontend application
@@ -62,12 +62,12 @@
 	b. give command 
 		npm start
 
-	c. Open the below URL in browser
+	c. Open the URL below in browser
 		http://localhost:3000
 		
 8. Test Kafka and backend
    
-	a. Test backend with postman with below data and with URL: _http://localhost:8080/employees/publish_
+	a. Test backend with Postman with below data and with URL: _http://localhost:8080/employees/publish_
 
     {
 			"name": "Testername 1",
@@ -89,12 +89,12 @@
 
 	b. Verify:
 		Employee data is displayed in a paginated table.
-		Search functionality works as expected.
+		The search functionality works as expected.
 		Pagination allows you to navigate between pages.
 		
 10. Test Scheduled Updates
 
-	a. Wait for given time for the scheduled service to update the timestamp field in the database.
+	a. Wait for a given time for the scheduled service to update the timestamp field in the database.
  
 	b. Refresh the H2 database query: SELECT * FROM employee;
  
